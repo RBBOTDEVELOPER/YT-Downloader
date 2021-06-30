@@ -2,7 +2,7 @@ from pyrogram import Client, Filters, StopPropagation, InlineKeyboardButton, Inl
 
 
 @Client.on_message(Filters.command(["start"]), group=-2)
-async def start(client, message):
+async def start(client,message):
     # return
     joinButton = InlineKeyboardMarkup([
         [InlineKeyboardButton("Support Channel", url="https://t.me/RoyalBotFamily")],
